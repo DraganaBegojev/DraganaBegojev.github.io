@@ -10,8 +10,8 @@ body {
   .circle-container {
     position: relative;
     margin: 2em auto;
-    width: 800px;
-    height: 800px;
+    width: 500px;
+    height: 500px;
   }
   
   .circle {
@@ -27,8 +27,8 @@ body {
   }
   
   .center-image {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     border-top: 2px solid #1E90FF;
     border-bottom: 2px solid #28A745;
@@ -54,8 +54,8 @@ body {
   }
   
   .circle-img {
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 0.5em;
@@ -70,12 +70,13 @@ body {
     width: fit-content;
   }
 .customers p {
-    margin-right: 0;
-    margin-left: auto;
+  margin-left: -55px;
+}
+.skill.customers, .customers p {
     background-color: #28A745;
 }
-.skill.customers {
-    background-color: #28A745;
+.solutions p {
+  float: right;
 }
 .solutions p, .skill.solutions {
     background-color: #1E90FF;
@@ -85,21 +86,22 @@ body {
 }
 .customers .circle-img {
     border: 2px solid #28A745;
+    margin-bottom: 0;
 }
 
 .svg-wrapper {
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
 }
 
 .svg-arrow-1 {
-    top: 45%;  /* Adjust top position for first arrow */
+    top: 43%;  /* Adjust top position for first arrow */
     left: 22%; /* Adjust left position for first arrow */
 }
 
 .svg-arrow-2 {
-    top: 45%;  /* Adjust top position for second arrow */
+    top: 43%;  /* Adjust top position for second arrow */
     right: 22%; /* Adjust left position for second arrow */
 }
 
