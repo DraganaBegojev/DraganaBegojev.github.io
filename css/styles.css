@@ -81,12 +81,27 @@ body {
     background-color: #1E90FF;
 }
 .solutions .circle-img {
-    border: 2px solid #28A745;
-}
-.customers .circle-img {
     border: 2px solid #1E90FF;
 }
+.customers .circle-img {
+    border: 2px solid #28A745;
+}
 
+.svg-wrapper {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+
+.svg-arrow-1 {
+    top: 45%;  /* Adjust top position for first arrow */
+    left: 22%; /* Adjust left position for first arrow */
+}
+
+.svg-arrow-2 {
+    top: 45%;  /* Adjust top position for second arrow */
+    right: 22%; /* Adjust left position for second arrow */
+}
 
   
   
