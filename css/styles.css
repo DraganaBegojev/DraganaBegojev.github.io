@@ -1,50 +1,93 @@
-/* Semi-Arch Bridge Styling */
-.semi-arch {
-    position: relative;
-    width: 100%;
-    height: 200px; /* Adjust based on arch size */
-    border-bottom: 5px solid #c19a6b; /* Bridge color */
-    border-radius: 50% 50% 0 0; /* Creates the arch */
-    overflow: hidden;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-end;
-    padding: 0 10px;
-    background-color: #f8f9fa; /* Light background */
-}
-
-/* Plank (Skill) Styling */
-.plank {
-    position: absolute;
-    bottom: 0;
-    background-color: #c19a6b; /* Wood plank color */
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transform-origin: bottom center;
-}
-
-/* Positioning Planks Along the Arch */
-.plank:nth-child(1) { transform: translate(-100px, 0) rotate(-30deg); }
-.plank:nth-child(2) { transform: translate(-50px, 0) rotate(-15deg); }
-.plank:nth-child(3) { transform: translate(0, 0) rotate(0deg); }
-.plank:nth-child(4) { transform: translate(50px, 0) rotate(15deg); }
-.plank:nth-child(5) { transform: translate(100px, 0) rotate(30deg); }
-
-/* Hover Effects for Planks */
-.plank:hover {
-    background-color: #a67c52; /* Highlight color */
-    transform: scale(1.1) translateY(-10px);
-    transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-/* General Styling */
 body {
     font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .circle-container {
+    position: relative;
+    margin: 2em auto;
+    width: 800px;
+    height: 800px;
+  }
+  
+  .circle {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-top: 3px solid #1E90FF;
+    border-bottom: 3px solid #28A745;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .center-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border-top: 2px solid #1E90FF;
+    border-bottom: 2px solid #28A745;
+    object-fit: cover;
+    position: absolute;
+  }
+  
+  .skill {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 0.9em;
+    padding: 0.3em 0.6em;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+  }
+  
+  .circle-image-wrapper {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .circle-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.5em;
+  }
+  
+  .circle-image-wrapper p {
+    margin: 0;
+    font-size: 1em;
+    color: #ffffff;
+    padding: 0.3em 0.6em;
+    border-radius: 10px;
+    width: fit-content;
+  }
+.customers p {
+    margin-right: 0;
+    margin-left: auto;
+    background-color: #28A745;
+}
+.skill.customers {
+    background-color: #28A745;
+}
+.solutions p, .skill.solutions {
+    background-color: #1E90FF;
+}
+.solutions .circle-img {
+    border: 2px solid #28A745;
+}
+.customers .circle-img {
+    border: 2px solid #1E90FF;
 }
 
-header, footer {
-    background-color: #f8f9fa;
-    padding: 20px 0;
-}
+
+  
+  
+  
