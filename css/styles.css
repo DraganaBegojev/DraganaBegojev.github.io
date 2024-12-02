@@ -1,11 +1,10 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #f9f9f9;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: url('images/background.jpg') no-repeat center center/cover;
+    background: url('../images/background.jpg') no-repeat center center/cover;
   }
   
   .circle-container {
