@@ -10,8 +10,8 @@ body {
   .circle-container {
     position: relative;
     margin: 2em auto;
-    width: 500px;
-    height: 500px;
+    width: 350px;
+    height: 350px;
   }
   
   .circle {
@@ -27,8 +27,8 @@ body {
   }
   
   .center-image {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     border-top: 2px solid #1E90FF;
     border-bottom: 2px solid #28A745;
@@ -39,7 +39,7 @@ body {
   .skill {
     position: absolute;
     transform: translate(-50%, -50%);
-    font-size: 0.9em;
+    font-size: 0.8em;
     padding: 0.3em 0.6em;
     border-radius: 10px;
     border: 1px solid #ddd;
@@ -54,31 +54,23 @@ body {
   }
   
   .circle-img {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 0.5em;
   }
   
-  .circle-image-wrapper p {
-    margin: 0;
-    font-size: 1em;
-    color: #ffffff;
-    padding: 0.3em 0.6em;
-    border-radius: 10px;
-    width: fit-content;
+  .svg-wrapper p {
+    font-size: 0.9em;
+    color: #ffad1e;
   }
-.customers p {
-  margin-left: -55px;
-}
-.skill.customers, .customers p {
+
+.skill.customers {
     background-color: #28A745;
 }
-.solutions p {
-  float: right;
-}
-.solutions p, .skill.solutions {
+
+.skill.solutions {
     background-color: #1E90FF;
 }
 .solutions .circle-img {
@@ -96,13 +88,24 @@ body {
 }
 
 .svg-arrow-1 {
-    top: 43%;  /* Adjust top position for first arrow */
-    left: 22%; /* Adjust left position for first arrow */
+    top: 40%;  /* Adjust top position for first arrow */
+    left: 16%; /* Adjust left position for first arrow */
 }
 
 .svg-arrow-2 {
-    top: 43%;  /* Adjust top position for second arrow */
-    right: 22%; /* Adjust left position for second arrow */
+    top: 40%;  /* Adjust top position for second arrow */
+    right: 16%; /* Adjust left position for second arrow */
+}
+
+#banner, #about {
+  background-color: #212529b5;
+  color: #ffffff;
+}
+
+#banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
   
