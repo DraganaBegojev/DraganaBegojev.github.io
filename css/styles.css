@@ -10,10 +10,11 @@ body {
   #banner, #about {
     background-color: #212529b5;
     color: #ffffff;
-  }  
-  
-  .circle-container {
+  }
+  #banner {
     display: none;
+  }
+  .circle-container {
     position: relative;
     margin: 2em auto;
     width: 350px;
@@ -40,7 +41,22 @@ body {
     border-bottom: 2px solid #28A745;
     object-fit: cover;
     position: absolute;
+    animation: borderColorChange 4s ease-in-out infinite; /* Apply border color change animation */
   }
+  @keyframes borderColorChange {
+    0% {
+        border-top-color: #1E90FF; /* Initial color for the top border */
+        border-bottom-color: #28A745; /* Initial color for the bottom border */
+    }
+    50% {
+        border-top-color: #28A745; /* Color for the top border halfway through */
+        border-bottom-color: #1E90FF; /* Color for the bottom border halfway through */
+    }
+    100% {
+        border-top-color: #1E90FF; /* Initial color for the top border */
+        border-bottom-color: #28A745; /* Initial color for the bottom border */
+    }
+}
   
   .skill {
     position: absolute;
@@ -134,16 +150,16 @@ body {
 }
 
 .svg-arrow-1 path {
-  animation: colorChange 3s ease-in-out infinite; /* Apply color change animation to the path */
+  animation: colorChange 4s ease-in-out infinite; /* Apply color change animation to the path */
 }
 
 .svg-arrow-2 path {
-  animation: colorChange2 3s ease-in-out infinite; /* Apply color change animation to the path */
+  animation: colorChange2 4s ease-in-out infinite; /* Apply color change animation to the path */
 }
 
 
 @media only screen and (min-width: 500px) {
-  .circle-container {
+  #banner {
     display: block;
   }
 }
