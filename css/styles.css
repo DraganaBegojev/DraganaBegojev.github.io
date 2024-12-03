@@ -6,6 +6,11 @@ body {
     box-sizing: border-box;
     background: url('../images/background-2.jpg') repeat center center/cover;
   }
+
+  #banner, #about {
+    background-color: #212529b5;
+    color: #ffffff;
+  }  
   
   .circle-container {
     display: none;
@@ -98,10 +103,44 @@ body {
     right: 16%; /* Adjust left position for second arrow */
 }
 
-#banner, #about {
-  background-color: #212529b5;
-  color: #ffffff;
+@keyframes colorChange {
+  0% {
+      stroke: #1E90FF; /* Initial color for the first arrow */
+  }
+  50% {
+      stroke: #28A745; /* Color for the first arrow halfway through */
+  }
+  100% {
+      stroke: #1E90FF; /* Initial color for the first arrow */
+  }
 }
+
+@keyframes colorChange2 {
+  0% {
+      stroke: #28A745; /* Initial color for the second arrow */
+  }
+  50% {
+      stroke: #1E90FF; /* Color for the second arrow halfway through */
+  }
+  100% {
+      stroke: #28A745; /* Initial color for the second arrow */
+  }
+}
+
+.svg-wrapper {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+}
+
+.svg-arrow-1 path {
+  animation: colorChange 3s ease-in-out infinite; /* Apply color change animation to the path */
+}
+
+.svg-arrow-2 path {
+  animation: colorChange2 3s ease-in-out infinite; /* Apply color change animation to the path */
+}
+
 
 @media only screen and (min-width: 500px) {
   .circle-container {
@@ -129,5 +168,4 @@ body {
     left: 20%;
   }
 }
-  
-  
+
