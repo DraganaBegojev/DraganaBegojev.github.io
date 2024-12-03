@@ -8,6 +8,7 @@ body {
   }
   
   .circle-container {
+    display: none;
     position: relative;
     margin: 2em auto;
     width: 350px;
@@ -102,6 +103,31 @@ body {
   color: #ffffff;
 }
 
-  
+@media only screen and (min-width: 500px) {
+  .circle-container {
+    display: block;
+  }
+}
+
+@media (min-width: 1024px) {
+  .circle-container {
+    width: 500px;
+    height: 500px;
+  }
+  .circle-img {
+    width: 150px;
+    height: 150px;
+  }
+  .center-image {
+    width: 120px;
+    height: 120px;
+  }
+  .svg-wrapper.svg-arrow-2 {
+    right: 20%;
+  }
+  .svg-wrapper.svg-arrow-1 {
+    left: 20%;
+  }
+}
   
   
