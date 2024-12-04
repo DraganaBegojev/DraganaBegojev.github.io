@@ -4,11 +4,11 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: url('../images/background-6.jpg') repeat center center/cover;
+    background: url('../images/background-5.png') repeat center center/cover;
   }
 
   #banner, #about_me {
-    background-color: #212529b5;
+    background-color: #212529cc;
     color: #ffffff;
   }
   #banner {
