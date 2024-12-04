@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Inconsolata", monospace;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -75,9 +75,10 @@ body {
     font-size: 0.8em;
     padding: 0.3em 0.6em;
     border-radius: 10px;
-    border: 1px solid #ddd;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     color: #ffffff;
+    border: 1px solid #ffad1e;
+    box-shadow: 0 0 5px #ffad1e;
+    font-family: "JetBrains Mono", monospace;
   }
   
   .circle-image-wrapper {
