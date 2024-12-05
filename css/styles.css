@@ -181,6 +181,21 @@ body {
   color: #ffffff;
   margin-top: 20px;
 }
+.card-footer {
+  padding: 0;
+}
+.card-footer > div {
+  padding: 8px 16px;
+}
+
+.card-footer > div:first-child {
+  border-bottom-left-radius: 5px;
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+}
+.card-footer > div:last-child {
+  border-bottom-right-radius: 5px;
+}
+
 
 
 
