@@ -13,7 +13,7 @@ body {
 #about {
   background: url('../images/background-5.png') repeat center center/cover;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom:40px;
 }
 #about-me {
   text-align: justify;
@@ -175,6 +175,16 @@ body {
   animation: colorChange2 5s ease-in-out infinite; /* Apply color change animation to the path */
 }
 
+/* Projects */
+
+#projects{
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+
+
+/* Mobiles */
 
 @media only screen and (min-width: 500px) {
   #banner {
