@@ -12,7 +12,7 @@ body {
 
 #about {
   background: url('../images/background-1.png') repeat center center/cover;
-  padding-top: 30px;
+  padding-top: 100px;
   padding-bottom:40px;
 }
 #about-me {
@@ -185,6 +185,7 @@ body {
 #projects{
   color: #ffffff;
   margin-top: 20px;
+  scroll-margin-top: 80px;
 }
 
 
