@@ -194,11 +194,21 @@ body {
   border-bottom-left-radius: 5px;
   border-right: 1px solid rgba(255, 255, 255, 0.15);
 }
-.card-footer > div:last-child {
+.card-footer > a {
   border-bottom-right-radius: 5px;
+  outline: transparent;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, outline 0.3s ease;
 }
 
+.card-footer > a:hover {
+  background-color: #28A745;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  outline: 1px solid #28A745;
+}
 
+a:hover .text-body-secondary {
+  color: white !important; 
+}
 
 
 /* Mobiles */
