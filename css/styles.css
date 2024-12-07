@@ -83,8 +83,13 @@ body {
     border-radius: 10px;
     color: #ffffff;
     border: 1px solid #ffad1e;
-    box-shadow: 0 0 5px #ffad1e;
     font-family: "JetBrains Mono", monospace;
+    cursor:default;
+    transition: background-color 0.3s ease;
+  }
+
+  .skill:hover, .circle-img:hover, .center-image:hover {
+    box-shadow: 0 0 5px #ffad1e;
   }
   
   .circle-image-wrapper {
