@@ -190,12 +190,14 @@ body {
 
 #projects .row {
   margin-top: unset;
+  min-height: 500px;
 }
 .project-top {
   padding: 24px;
 }
 #search-bar {
   text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 /*cards*/
