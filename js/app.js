@@ -19,3 +19,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// Modal
+
+document.addEventListener('DOMContentLoaded', () => {
+    const descriptionButtons = document.querySelectorAll('.description-btn');
+    const modalTitle = document.getElementById('projectModalLabel');
+    const modalBody = document.querySelector('.modal-body');
+  
+    descriptionButtons.forEach(button => {
+      button.addEventListener('click', (event) => {
+        const title = button.getAttribute('data-title');
+        const description = button.getAttribute('data-description');
+  
+        modalTitle.textContent = title;
+        modalBody.textContent = description;
+      });
+    });
+  });

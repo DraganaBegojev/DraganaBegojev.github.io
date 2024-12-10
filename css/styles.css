@@ -210,9 +210,12 @@ body {
   padding: 8px 16px;
 }
 
-.card-footer > div:first-child {
-  border-bottom-left-radius: 5px;
+.description-btn {
+  border-radius: 0 0 0 5px;
   border-right: 1px solid rgba(255, 255, 255, 0.15);
+  text-decoration: none;
+  outline: transparent;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, outline 0.3s ease
 }
 .card-footer > a {
   border-bottom-right-radius: 5px;
@@ -220,12 +223,13 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, outline 0.3s ease;
 }
 
-.card-footer > div:hover {
+.description-btn:hover {
   background-color: #0d6efd;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   outline: 1px solid #0d6efd;
+  color: white;
 }
-.card-footer > div:hover .text-body-secondary, .card-footer >  a:hover .text-body-secondary {
+.card-footer .text-body-secondary:hover, .card-footer >  a:hover .text-body-secondary {
   color: white !important; 
 }
 
