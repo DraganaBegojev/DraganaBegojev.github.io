@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const description = button.getAttribute('data-description');
   
         modalTitle.textContent = title;
-        modalBody.textContent = description;
+        modalBody.innerHTML = description;
       });
     });
   });
