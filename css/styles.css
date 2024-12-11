@@ -9,6 +9,9 @@ body {
 .navbar {
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
+.navbar-nav {
+  padding-top: 20px;
+}
 
 #about {
   background: url('../images/background-1.png') repeat center center/cover;
@@ -184,7 +187,7 @@ body {
 
 #projects{
   color: #ffffff;
-  scroll-margin-top: 80px;
+  scroll-margin-top: 250px;
   padding-bottom: 30px;
 }
 
@@ -243,10 +246,19 @@ body {
 
 /* Mobiles */
 
-@media only screen and (min-width: 500px) {
+@media (min-width: 500px) {
   #banner {
     display: block;
   }
+}
+
+@media (min-width: 992px) {
+  .navbar-nav {
+    padding-top: 0;
+}
+#projects{
+  scroll-margin-top: 80px;
+}
 }
 
 @media (min-width: 1024px) {
