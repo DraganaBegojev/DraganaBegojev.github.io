@@ -253,11 +253,15 @@ body {
 #contact {
   background: url('../images/background-2.jpg') repeat center center/cover;
   padding-top: 50px;
-  padding-bottom:40px;
+  padding-bottom:60px;
 }
 
 #contact h2 {
   color: #ffffff;
+}
+#contact p {
+  font-family: "Courier Prime", monospace;
+  font-size: 14px;
 }
 
 #contact svg {
@@ -287,6 +291,11 @@ body {
   100% {
     transform: scale(1);
   }
+}
+
+footer p {
+  font-family: "Courier Prime", monospace;
+  font-size: 12px;
 }
 
 
