@@ -307,6 +307,12 @@ a {
   }
 }
 
+/* Footer */
+
+footer .container {
+  opacity: 0.55;
+}
+
 footer p {
   font-family: "Courier Prime", monospace;
   font-size: 12px;
