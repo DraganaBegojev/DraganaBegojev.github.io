@@ -37,6 +37,7 @@ a {
 }
 #about-me {
   text-align: justify;
+  scroll-margin-top: 75px;
 }
 #about-me p {
   text-indent: 2em;
@@ -198,8 +199,8 @@ a {
 
 #projects{
   color: #ffffff;
-  scroll-margin-top: 100px;
   padding-bottom: 50px;
+  scroll-margin-top: 75px;
 }
 
 #projects .row {
@@ -258,7 +259,7 @@ a {
   background: url('../images/background-2.jpg') repeat center center/cover;
   padding-top: 50px;
   padding-bottom:60px;
-  scroll-margin-top: 200px;
+  scroll-margin-top: 30px;
 }
 
 #contact h2 {
@@ -308,9 +309,6 @@ footer p {
 /* Media Queries */
 
 @media (min-width: 500px) {
-  #about-me {
-    scroll-margin-top: 300px;
-  }
   #banner {
     display: block;
   }
@@ -319,9 +317,6 @@ footer p {
 @media (min-width: 992px) {
   .navbar-nav {
     padding-top: 0;
-}
-#projects{
-  scroll-margin-top: 70px;
 }
 }
 
