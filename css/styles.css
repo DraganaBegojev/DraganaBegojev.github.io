@@ -43,7 +43,13 @@ a {
   text-indent: 2em;
 }
 
-  #banner {
+.main-image {
+  width: 220px;
+  height: 220px;
+  border-radius: 20%;
+}
+
+.circle-container {
     display: none;
   }
   .circle-container {
@@ -309,8 +315,11 @@ footer p {
 /* Media Queries */
 
 @media (min-width: 500px) {
-  #banner {
+  .circle-container {
     display: block;
+  }
+  .main-image {
+    display: none;
   }
 }
 
