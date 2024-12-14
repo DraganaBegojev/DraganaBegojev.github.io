@@ -37,7 +37,7 @@ a {
 }
 #about-me {
   text-align: justify;
-  scroll-margin-top: 75px;
+  scroll-margin-top: 120px;
 }
 #about-me p {
   text-indent: 2em;
@@ -205,8 +205,10 @@ a {
 
 #projects{
   color: #ffffff;
-  padding-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 84px;
   scroll-margin-top: 75px;
+  background-color: #000;
 }
 
 #projects .row {
