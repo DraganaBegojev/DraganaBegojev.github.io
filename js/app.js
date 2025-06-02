@@ -4,6 +4,14 @@
 document.addEventListener('DOMContentLoaded', () => {
   const projectsData = [
     {
+      {
+      title: "A Random Quote Generator",
+      img: "images/project-10.jpg",
+      alt: "A Random Quote Generator Project",
+      shortDescription: "A simple app that displays random famous quotes at the click of a button using basic JavaScript logic.",
+      fullDescription: `This project is a JavaScript-based quote generator that displays a random quote each time the user clicks a button. The quotes are selected from an array of objects, each containing a quote and its author. The project reinforces core JavaScript concepts such as variables, loops, conditionals, and functions. It demonstrates how to work with object literals, generate random output, and update the DOM dynamically.`,
+      link: "https://draganabegojev.github.io/A-Random-Quote-Generator/"
+    },
       title: "Employee Directory",
       img: "images/project-8.jpg",
       alt: "Employee Directory Project",
@@ -50,6 +58,38 @@ document.addEventListener('DOMContentLoaded', () => {
       shortDescription: "This project showcases a responsive, mobile-first registration form.",
       fullDescription: `This project demonstrates the creation of a responsive registration form that adapts seamlessly to mobile and desktop layouts. Using a mobile-first approach and media queries, the design incorporates a variety of HTML input types and attributes.`,
       link: "https://draganabegojev.github.io/Project-3/"
+    },
+    {
+      title: "",
+      img: "images/project-3.jpg",
+      alt: "",
+      shortDescription: "",
+      fullDescription: ``,
+      link: ""
+    },
+    {
+      title: "",
+      img: "images/project-3.jpg",
+      alt: "",
+      shortDescription: "",
+      fullDescription: ``,
+      link: ""
+    },
+    {
+      title: "",
+      img: "images/project-3.jpg",
+      alt: "",
+      shortDescription: "",
+      fullDescription: ``,
+      link: ""
+    },
+    {
+      title: "",
+      img: "images/project-3.jpg",
+      alt: "",
+      shortDescription: "",
+      fullDescription: ``,
+      link: ""
     }
   ];
 
