@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const projectsData = [
     {
       title: "Data Pagination and Filtering",
-      img: "images/project-3.jpg",
+      img: "images/project-11.jpg",
       alt: "Data Pagination and Filtering Project",
       shortDescription: "An interactive web app that displays student profiles using pagination to improve navigation and user experience.",
       fullDescription: `This project demonstrates the use of pagination — a common technique in web development — to manage and display a large list of student profiles. The app dynamically loads student data (including name, email, and picture) and displays only nine students per page to keep the interface clean and user-friendly. Navigation buttons allow users to move between pages, making the list easy to explore. The JavaScript solution is flexible and scalable, capable of handling lists of any length, not just the initial 42-student dataset. This project highlights practical DOM manipulation, event handling, and dynamic content rendering using core JavaScript.`,
