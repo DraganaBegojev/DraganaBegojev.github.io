@@ -4,6 +4,14 @@
 document.addEventListener('DOMContentLoaded', () => {
   const projectsData = [
     {
+      title: "Data Pagination and Filtering",
+      img: "images/project-3.jpg",
+      alt: "Data Pagination and Filtering Project",
+      shortDescription: "An interactive web app that displays student profiles using pagination to improve navigation and user experience.",
+      fullDescription: `This project demonstrates the use of pagination — a common technique in web development — to manage and display a large list of student profiles. The app dynamically loads student data (including name, email, and picture) and displays only nine students per page to keep the interface clean and user-friendly. Navigation buttons allow users to move between pages, making the list easy to explore. The JavaScript solution is flexible and scalable, capable of handling lists of any length, not just the initial 42-student dataset. This project highlights practical DOM manipulation, event handling, and dynamic content rendering using core JavaScript.`,
+      link: "https://draganabegojev.github.io/Data-Pagination-and-Filtering/"
+    },
+    {
       title: "A Random Quote Generator",
       img: "images/project-10.jpg",
       alt: "A Random Quote Generator Project",
@@ -58,14 +66,6 @@ document.addEventListener('DOMContentLoaded', () => {
       shortDescription: "This project showcases a responsive, mobile-first registration form.",
       fullDescription: `This project demonstrates the creation of a responsive registration form that adapts seamlessly to mobile and desktop layouts. Using a mobile-first approach and media queries, the design incorporates a variety of HTML input types and attributes.`,
       link: "https://draganabegojev.github.io/Project-3/"
-    },
-    {
-      title: "",
-      img: "images/project-3.jpg",
-      alt: "",
-      shortDescription: "",
-      fullDescription: ``,
-      link: ""
     },
     {
       title: "",
