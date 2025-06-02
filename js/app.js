@@ -1,38 +1,145 @@
-//Search Project
+// Project: Portfolio Projects
+// Description: This script manages the project list, search functionality, and modal display for a portfolio website.
 
 document.addEventListener('DOMContentLoaded', () => {
-    const searchBar = document.getElementById("search-bar");
-    searchBar.addEventListener('input', function () {
-        const query = this.value.toLowerCase();
-        const projects = document.querySelectorAll('.project');
+  const projectsData = [
+    {
+      title: "Employee Directory",
+      img: "images/project-8.jpg",
+      alt: "Employee Directory Project",
+      shortDescription: "This project includes an employee directory that communicates with a third-party API.",
+      fullDescription: `This project highlights building a dynamic Employee Directory for Awesome Startup using the Random User Generator API. It fetches data for 12 random employees, displaying their profiles in a responsive grid with details like name, email, and location. Clicking a card opens a modal with additional information, such as birthday and address. Key features include API communication, JSON parsing, responsive design, and modal functionality.`,
+      link: "https://draganabegojev.github.io/Project-8/"
+    },
+    {
+      title: "WebApp Dashboard",
+      img: "images/project-7.jpg",
+      alt: "WebApp Dashboard Project",
+      shortDescription: "This project features an interactive web dashboard that includes charts and graphs powered by JavaScript.",
+      fullDescription: `This project demonstrates the creation of a dynamic web dashboard using HTML, CSS, and JavaScript. The dashboard mirrors real-world applications like GitHub or Mint, offering users an interactive control panel for managing web app functionality.`,
+      link: "https://draganabegojev.github.io/Project-7/"
+    },
+    {
+      title: "Game Show App",
+      img: "images/project-6.jpg",
+      alt: "Game Show App Project",
+      shortDescription: `This project represents the browser version of "Wheel of Success", a word-guessing game.`,
+      fullDescription: `This project showcases a browser-based “Wheel of Success” word-guessing game where players interact with an onscreen keyboard to solve a random phrase. The game dynamically updates the board with correct guesses and deducts one of five guesses for incorrect ones. A win screen appears if the phrase is completed, while a losing screen is displayed after five incorrect guesses. Guessed letters are automatically disabled, providing a seamless and interactive gaming experience.`,
+      link: "https://draganabegojev.github.io/Project-6/"
+    },
+    {
+      title: "Interactive Photo Gallery",
+      img: "images/project-5.jpg",
+      alt: "Interactive Photo Gallery Project",
+      shortDescription: "This project showcases an interactive, searchable gallery of photos.",
+      fullDescription: `This project features an interactive photo gallery built using JavaScript and CSS Grid Layout. It includes thumbnails and photos with descriptions, a dynamic search bar to filter photos based on user input, and a lightbox for viewing individual images.`,
+      link: "https://draganabegojev.github.io/Project-5/"
+    },
+    {
+      title: "Web Style Guide",
+      img: "images/project-4.jpg",
+      alt: "Web Style Guide Project",
+      shortDescription: "This project highlights a style guide that has been developed using Sass.",
+      fullDescription: `This project focuses on converting a provided CSS file into Sass by organizing the code into multiple Sass partial files. Repeated values like colors and length units are identified and stored as Sass variables.`,
+      link: "https://draganabegojev.github.io/Project-4/"
+    },
+    {
+      title: "Online Registration Form",
+      img: "images/project-3.jpg",
+      alt: "Online Registration Form Project",
+      shortDescription: "This project showcases a responsive, mobile-first registration form.",
+      fullDescription: `This project demonstrates the creation of a responsive registration form that adapts seamlessly to mobile and desktop layouts. Using a mobile-first approach and media queries, the design incorporates a variety of HTML input types and attributes.`,
+      link: "https://draganabegojev.github.io/Project-3/"
+    }
+  ];
 
-        projects.forEach(project => {
-            const name = project.querySelector('.card-title').textContent.toLowerCase();
-            const description = project.querySelector('.card-text').textContent.toLowerCase();
+  const projectList = document.getElementById("project-list");
+  const searchBar = document.getElementById("search-bar");
+  const modalTitle = document.getElementById("projectModalLabel");
+  const modalBody = document.querySelector(".modal-body");
 
-            if (name.includes(query) || description.includes(query)) {
-                project.style.display = ''; // Show the project
-            } else {
-                project.style.display = 'none'; // Hide the project
-            }
-        });
+  // Pagination
+  const projectsPerPage = 6;
+  let currentPage = 1;
+  let filteredProjects = projectsData;
+
+  function renderProjects() {
+    projectList.innerHTML = "";
+
+    const start = (currentPage - 1) * projectsPerPage;
+    const end = start + projectsPerPage;
+    const projectsToShow = filteredProjects.slice(start, end);
+
+    projectsToShow.forEach(project => {
+      const projectHTML = `
+        <div class="col project">
+          <div class="card h-100">
+            <img src="${project.img}" class="card-img-top" alt="${project.alt}">
+            <div class="card-body">
+              <h5 class="card-title">${project.title}</h5>
+              <p class="card-text">${project.shortDescription}</p>
+            </div>
+            <div class="card-footer d-flex">
+              <button class="btn btn-link text-body-secondary description-btn flex-grow-1" 
+                      data-title="${project.title}" 
+                      data-description="${project.fullDescription}" 
+                      data-bs-toggle="modal" 
+                      data-bs-target="#projectModal">
+                Description
+              </button>
+              <a href="${project.link}" target="_blank" class="flex-grow-1 d-flex align-items-center justify-content-center text-decoration-none">
+                <div class="text-body-secondary"><small>Link</small></div>
+              </a>
+            </div>
+          </div>
+        </div>`;
+      projectList.insertAdjacentHTML("beforeend", projectHTML);
     });
-});
 
-// Modal
+    updateModalEvents();
+    updatePaginationControls();
+  }
 
-document.addEventListener('DOMContentLoaded', () => {
-    const descriptionButtons = document.querySelectorAll('.description-btn');
-    const modalTitle = document.getElementById('projectModalLabel');
-    const modalBody = document.querySelector('.modal-body');
-  
-    descriptionButtons.forEach(button => {
-      button.addEventListener('click', (event) => {
-        const title = button.getAttribute('data-title');
-        const description = button.getAttribute('data-description');
-  
-        modalTitle.textContent = title;
-        modalBody.innerHTML = description;
+  function updateModalEvents() {
+    document.querySelectorAll('.description-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        modalTitle.textContent = button.getAttribute('data-title');
+        modalBody.textContent = button.getAttribute('data-description');
       });
     });
+  }
+
+  function updatePaginationControls() {
+    const totalPages = Math.ceil(filteredProjects.length / projectsPerPage);
+    document.getElementById("pageIndicator").textContent = `Page ${currentPage} of ${totalPages}`;
+    document.getElementById("prevPage").disabled = currentPage === 1;
+    document.getElementById("nextPage").disabled = currentPage === totalPages;
+  }
+
+  document.getElementById("prevPage").addEventListener("click", () => {
+    if (currentPage > 1) {
+      currentPage--;
+      renderProjects();
+    }
   });
+
+  document.getElementById("nextPage").addEventListener("click", () => {
+    const totalPages = Math.ceil(filteredProjects.length / projectsPerPage);
+    if (currentPage < totalPages) {
+      currentPage++;
+      renderProjects();
+    }
+  });
+
+  searchBar.addEventListener('input', function () {
+    const query = this.value.toLowerCase();
+    filteredProjects = projectsData.filter(project =>
+      project.title.toLowerCase().includes(query) ||
+      project.shortDescription.toLowerCase().includes(query)
+    );
+    currentPage = 1;
+    renderProjects();
+  });
+
+  renderProjects(); // Initial load
+});
