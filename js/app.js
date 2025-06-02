@@ -4,7 +4,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   const projectsData = [
     {
-      {
       title: "A Random Quote Generator",
       img: "images/project-10.jpg",
       alt: "A Random Quote Generator Project",
@@ -12,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
       fullDescription: `This project is a JavaScript-based quote generator that displays a random quote each time the user clicks a button. The quotes are selected from an array of objects, each containing a quote and its author. The project reinforces core JavaScript concepts such as variables, loops, conditionals, and functions. It demonstrates how to work with object literals, generate random output, and update the DOM dynamically.`,
       link: "https://draganabegojev.github.io/A-Random-Quote-Generator/"
     },
+    {
       title: "Employee Directory",
       img: "images/project-8.jpg",
       alt: "Employee Directory Project",
