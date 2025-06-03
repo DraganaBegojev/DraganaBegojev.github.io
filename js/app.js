@@ -4,6 +4,30 @@
 document.addEventListener('DOMContentLoaded', () => {
   const projectsData = [
     {
+      title: "Public API Requests",
+      img: "images/project-14.jpg",
+      alt: "Public API Requests Project",
+      shortDescription: "An interactive employee directory built with vanilla JavaScript, using the Random User Generator API. Displays employee profiles in a responsive grid layout with modal popups for additional details.",
+      fullDescription: `This project demonstrates the ability to work with public APIs and handle asynchronous JavaScript operations. Using the Random User Generator API, I created a responsive employee directory for a fictional distributed company called Awesome Startup. The app fetches and displays contact information for 12 randomly generated employees, including their name, photo, email, and location. Clicking on any employee opens a modal window with additional information like address and birthday. All functionality—including API requests, dynamic DOM manipulation, modal behavior, and error handling—was implemented using vanilla JavaScript, without external libraries or frameworks. This project highlights skills in working with JSON data, DOM scripting, event handling, and creating interactive, data-driven user interfaces.`,
+      link: "https://draganabegojev.github.io/Public-API-Requests/"
+    },
+    {
+      title: "Phrase Hunter – OOP Word Guessing Game",
+      img: "images/project-13.jpg",
+      alt: "Phrase Hunter – OOP Word Guessing Game Project",
+      shortDescription: "A browser-based word guessing game built with JavaScript and Object-Oriented Programming principles.",
+      fullDescription: `A browser-based game built with vanilla JavaScript and ES6 classes, where users guess a hidden phrase by interacting with an on-screen keyboard. The project showcases Object-Oriented Programming principles, dynamic DOM updates, and responsive UI feedback—demonstrating strong front-end skills and clean, modular code structure.`,
+      link: "https://draganabegojev.github.io/OOP-Game-Show-App/"
+    },
+    {
+      title: "Interactive Form",
+      img: "images/project-12.jpg",
+      alt: "Interactive Form Project",
+      shortDescription: "An enhanced registration form with dynamic interactivity and real-time input validation using vanilla JavaScript.",
+      fullDescription: `This project features a fully functional and interactive registration form for a fictional Full Stack conference. Using core JavaScript, the form is enhanced to provide a smoother user experience through dynamic, context-aware behavior. Conditional logic is implemented to show or hide fields based on user selections, update costs in real time, and improve accessibility. The project also includes robust input validation with informative error messages that guide users to complete the form correctly. This hands-on exercise demonstrates strong DOM manipulation, event handling, and form validation skills without relying on external libraries.`,
+      link: "https://draganabegojev.github.io/Interactive-Form/"
+    },
+    {
       title: "Data Pagination and Filtering",
       img: "images/project-11.jpg",
       alt: "Data Pagination and Filtering Project",
@@ -66,30 +90,6 @@ document.addEventListener('DOMContentLoaded', () => {
       shortDescription: "This project showcases a responsive, mobile-first registration form.",
       fullDescription: `This project demonstrates the creation of a responsive registration form that adapts seamlessly to mobile and desktop layouts. Using a mobile-first approach and media queries, the design incorporates a variety of HTML input types and attributes.`,
       link: "https://draganabegojev.github.io/Project-3/"
-    },
-    {
-      title: "",
-      img: "images/project-3.jpg",
-      alt: "",
-      shortDescription: "",
-      fullDescription: ``,
-      link: ""
-    },
-    {
-      title: "",
-      img: "images/project-3.jpg",
-      alt: "",
-      shortDescription: "",
-      fullDescription: ``,
-      link: ""
-    },
-    {
-      title: "",
-      img: "images/project-3.jpg",
-      alt: "",
-      shortDescription: "",
-      fullDescription: ``,
-      link: ""
     }
   ];
 
