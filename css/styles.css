@@ -239,8 +239,16 @@ a {
   outline: transparent;
   transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, outline 0.3s ease
 }
-.card-footer > a {
+
+.live-btn {
+  border-radius: 0;
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+}
+.github-btn {
   border-bottom-right-radius: 5px;
+}
+
+.card-footer > a {
   outline: transparent;
   transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, outline 0.3s ease;
 }
@@ -251,16 +259,24 @@ a {
   outline: 1px solid #0d6efd;
   color: white;
 }
+
+.live-btn:hover{
+  border-radius: 0;
+  background-color: #28A745;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  outline: 1px solid #28A745;
+}
+
+.github-btn:hover {
+  background-color: #6f42c1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  outline: 1px solid #6f42c1;
+}
 .card-footer .text-body-secondary:hover, .card-footer >  a:hover .text-body-secondary {
   color: white !important; 
 }
 
 
-.card-footer > a:hover {
-  background-color: #28A745;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  outline: 1px solid #28A745;
-}
 
 /*Contact*/
 
