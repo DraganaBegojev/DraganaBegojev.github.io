@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
       alt: "Portfolio Site Project",
       shortDescription: "A portfolio website built with Node.js, Express, and Pug to showcase my previous projects. This server-rendered app uses dynamic routing, a custom JSON data file, and Pug templates to generate project pages.",
       fullDescription: `This project marks the transition from client-side to server-side JavaScript by building a dynamic portfolio website using Node.js, Express, and Pug. The site showcases my first five projects from the Full Stack JavaScript Techdegree program, including a landing page, an about page, and individual project pages. All project content is stored in a custom JSON file and rendered into HTML using Pug templates.I implemented server-side routing with Express to handle page requests, linked project data dynamically to templates, and configured middleware to serve static assets like stylesheets and images. Error handling was also included to manage invalid routes and server issues gracefully.This project demonstrates my understanding of back-end fundamentals including Express routing, template rendering, data handling, and building scalable web applications. `,
+      link: "https://static-node-js-and-express-site.onrender.com/",
       github: "https://github.com/DraganaBegojev/Static-Node.js-and-Express-Site"
     },
     {
