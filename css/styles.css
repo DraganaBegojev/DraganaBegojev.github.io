@@ -44,7 +44,7 @@ a {
   font-size: 14px;
 }
 
-#about-me p:first-child, #about-me p:last-child {
+ #about-me p:last-child {
   text-indent: 0;
 }
 
