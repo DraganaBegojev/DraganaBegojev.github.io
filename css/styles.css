@@ -44,6 +44,10 @@ a {
   font-size: 14px;
 }
 
+#about-me p:first-child, #about-me p:last-child {
+  text-indent: 0;
+}
+
 .main-image {
   width: 220px;
   height: 220px;
