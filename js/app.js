@@ -2,8 +2,23 @@
 // Description: This script manages the project list, search functionality, and modal display for a portfolio website.
 
 document.addEventListener('DOMContentLoaded', () => {
-  const projectsData = [
-      {
+    const projectsData = [
+    {
+      title: "React Gallery App",
+      img: "images/project-16.jpg",
+      alt: "Portfolio Site Project",
+      shortDescription: "A React-based image gallery app that fetches photos from the Pixabay API, featuring dynamic search, topic routes, and a modular component structure built with React Router and Vite.",
+      fullDescription: `This project is a React single-page application that functions as an interactive image gallery. Using React, Vite, and React Router, the app displays images fetched from the Pixabay API and allows users to navigate between predefined topic pages or search for custom keywords.
+      Technical highlights:
+        - Modular React Components – Container components manage state and pass data to reusable stateless components.
+        - Client-Side Routing – React Router enables seamless navigation between topic and search pages.
+        - API Integration – Fetch API retrieves image data dynamically from Pixabay, supporting search functionality.
+        - Custom Styling – Extended CSS to personalize the gallery layout and enhance usability.
+        - Single-Page Application (SPA) – Built with best practices for fast, responsive, and maintainable front-end architecture.`,
+      link: "https://react-gallery-app-flame.vercel.app/",
+      github: "https://github.com/DraganaBegojev/React-Gallery-App"
+    },
+    {
       title: "Static Node.js and Express Site",
       img: "images/project-15.jpg",
       alt: "Portfolio Site Project",
