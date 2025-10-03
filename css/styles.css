@@ -227,6 +227,10 @@ a {
   border-radius: 5px;
 }
 
+.modal-body ul {
+  text-align: left;
+} 
+
 /*cards*/
 .card-footer {
   padding: 0;
