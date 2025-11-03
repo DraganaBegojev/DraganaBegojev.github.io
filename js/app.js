@@ -4,9 +4,19 @@
 document.addEventListener('DOMContentLoaded', () => {
     const projectsData = [
     {
+      title: "SQL Library Manager ",
+      img: "images/project-17.jpg",
+      alt: "SQL Project",
+      shortDescription: "A full-stack CRUD application for managing books, built with Express.js, Sequelize, and Pug. It allows users to add, update, search, and delete books with server-side validation and pagination.",
+      fullDescription: `The Book Library App is a full-stack web project built using Express.js and Sequelize ORM. It provides a clean interface for managing a collection of books — including creating, editing, deleting, and searching by title, author, genre, or year. The app features server-side form validation, custom error handling, and pagination for larger datasets.
+      <br>It demonstrates practical knowledge of RESTful routing, Sequelize queries, and dynamic rendering with Pug templates — all styled with custom CSS for a simple, readable layout.`
+      link: "https://sql-library-manager-cd89.onrender.com",
+      github: "https://github.com/DraganaBegojev/SQL-Library-Manager"
+    },
+    {
       title: "React Gallery App",
       img: "images/project-16.jpg",
-      alt: "Portfolio Site Project",
+      alt: "React Project",
       shortDescription: "A React-based image gallery app that fetches photos from the Pixabay API, featuring dynamic search, topic routes, and a modular component structure built with React Router and Vite.",
       fullDescription: `This project is a React single-page application that functions as an interactive image gallery. Using React, Vite, and React Router, the app displays images fetched from the Pixabay API and allows users to navigate between predefined topic pages or search for custom keywords.
       <br><strong>Technical highlights</strong>:
@@ -23,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
     {
       title: "Static Node.js and Express Site",
       img: "images/project-15.jpg",
-      alt: "Portfolio Site Project",
+      alt: "Static Node.js and Express Site Project",
       shortDescription: "A portfolio website built with Node.js, Express, and Pug to showcase my previous projects. This server-rendered app uses dynamic routing, a custom JSON data file, and Pug templates to generate project pages.",
       fullDescription: `This project marks the transition from client-side to server-side JavaScript by building a dynamic portfolio website using Node.js, Express, and Pug. The site showcases my first five projects from the Full Stack JavaScript Techdegree program, including a landing page, an about page, and individual project pages. All project content is stored in a custom JSON file and rendered into HTML using Pug templates.I implemented server-side routing with Express to handle page requests, linked project data dynamically to templates, and configured middleware to serve static assets like stylesheets and images. Error handling was also included to manage invalid routes and server issues gracefully.This project demonstrates my understanding of back-end fundamentals including Express routing, template rendering, data handling, and building scalable web applications. `,
       link: "https://static-node-js-and-express-site.onrender.com/",
