@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
       alt: "SQL Project",
       shortDescription: "A full-stack CRUD application for managing books, built with Express.js, Sequelize, and Pug. It allows users to add, update, search, and delete books with server-side validation and pagination.",
       fullDescription: `The Book Library App is a full-stack web project built using Express.js and Sequelize ORM. It provides a clean interface for managing a collection of books — including creating, editing, deleting, and searching by title, author, genre, or year. The app features server-side form validation, custom error handling, and pagination for larger datasets.
-      <br>It demonstrates practical knowledge of RESTful routing, Sequelize queries, and dynamic rendering with Pug templates — all styled with custom CSS for a simple, readable layout.`
+      <br>It demonstrates practical knowledge of RESTful routing, Sequelize queries, and dynamic rendering with Pug templates — all styled with custom CSS for a simple, readable layout.`,
       link: "https://sql-library-manager-cd89.onrender.com",
       github: "https://github.com/DraganaBegojev/SQL-Library-Manager"
     },
