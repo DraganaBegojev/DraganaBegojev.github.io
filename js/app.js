@@ -3,8 +3,20 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     const projectsData = [
+      {
+      title: "Full Stack App with React and a REST API",
+      img: "images/project-18.jpg",
+      alt: "Full Stack Project",
+      shortDescription: "A full-stack React application that allows users to manage a school course database through a REST API. The app supports user authentication and full CRUD operations, demonstrating practical use of React Router, Context API, and secure client-server communication.",
+      fullDescription: `This project is a full-stack web application built with React as a client for a previously developed REST API. It enables users to manage a school database containing course information by viewing available courses, accessing detailed course data, and performing create, update, and delete operations.
+      <br>User authentication is a core feature of the application. Visitors can browse courses publicly, while authenticated users can sign up, sign in, and securely manage course data using basic authentication. Authorization logic ensures that only signed-in users can create, edit, or delete courses.
+      <br>The frontend is built using React and JSX, with a modular component structure for maintainability and scalability. React Router is used to handle client-side routing and navigation, while React Context API manages global state such as authentication and user data. The application communicates with the backend via the Fetch API, handling asynchronous data loading, error states, and protected routes.
+      <br>The project was scaffolded using Vite, providing a fast development environment, and styled by extending the provided CSS to create a personalized UI. This application demonstrates a solid understanding of modern React fundamentals, state management, routing, authentication flows, and real-world full-stack integration.`,
+      link: "https://full-stack-app-dragana-begojev.up.railway.app/",
+      github: "https://github.com/DraganaBegojev/Full-Stack-App-with-React-and-a-REST-API"
+    },
     {
-      title: "SQL Library Manager ",
+      title: "SQL Library Manager",
       img: "images/project-17.jpg",
       alt: "SQL Project",
       shortDescription: "A full-stack CRUD application for managing books, built with Express.js, Sequelize, and Pug. It allows users to add, update, search, and delete books with server-side validation and pagination.",
