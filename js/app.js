@@ -4,7 +4,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const projectsData = [
     {
-      title: "SQL Library Manager (AI-Assisted Rebuild)",
+      title: "AI Vibe Coding - SQL Library Manager Rebuild",
       img: "images/project-19.jpg",
       alt: "AI-Assisted SQL Project",
       shortDescription: "A full-stack web application built with Express, Sequelize, and Pug to manage a library system, developed with the assistance of AI coding tools like GitHub Copilot and ChatGPT to streamline development, debug issues, and implement features efficiently.",
