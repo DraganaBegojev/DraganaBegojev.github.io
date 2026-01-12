@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
       </ul>
       <p>This project showcases the integration of AI into real-world full-stack development, highlighting how AI can speed up boilerplate creation, assist with debugging, and provide suggestions for implementing complex features while still requiring critical thinking and human decision-making.</p>
     `,
-      link: "https://sql-library-manager-ai-assisted-rebuild.onrender.com",
+      link: "https://sql-library-manager-ai-assisted-rebuild-production.up.railway.app/",
       github: "https://github.com/DraganaBegojev/SQL-Library-Manager--AI-Assisted-Rebuild-"
     },
       {
