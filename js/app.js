@@ -3,6 +3,27 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     const projectsData = [
+    {
+      title: "SQL Library Manager (AI-Assisted Rebuild)",
+      img: "images/project-19.jpg",
+      alt: "AI-Assisted SQL Project",
+      shortDescription: "A full-stack web application built with Express, Sequelize, and Pug to manage a library system, developed with the assistance of AI coding tools like GitHub Copilot and ChatGPT to streamline development, debug issues, and implement features efficiently.",
+      fullDescription: `
+      <p>Library Manager is a full-stack JavaScript application that demonstrates how AI coding assistants can accelerate development while still requiring human oversight for correctness. This project allows librarians to manage books, patrons, and loans efficiently, and includes AI-assisted implementation of key features:</p>
+      <ul>
+        <li><strong>AI-Assisted Code Generation:</strong> Models, routes, and Pug templates were scaffolded using GitHub Copilot and refined with ChatGPT for bug fixes and search/pagination logic.</li>
+        <li><strong>Books & Patrons Management:</strong> CRUD operations with form validation, implemented with AI guidance to ensure consistency and efficiency.</li>
+        <li><strong>Loan Management:</strong> Create, view, and return loans with automatic tracking of due dates and overdue loans, using AI-generated code as a starting point.</li>
+        <li><strong>Search & Pagination:</strong> AI-assisted implementation of searching by book title and patron name, with dynamic pagination.</li>
+        <li><strong>Patron Loan History:</strong> Display of loan history for each patron, including active and returned loans, with conditional rendering of actions.</li>
+        <li><strong>Robust Error Handling:</strong> Global error handler implemented with AI guidance to render user-friendly pages for invalid routes or missing resources.</li>
+        <li><strong>Technologies Used:</strong> Express.js, Sequelize ORM, Pug templating, SQLite/PostgreSQL, and CSS.</li>
+      </ul>
+      <p>This project showcases the integration of AI into real-world full-stack development, highlighting how AI can speed up boilerplate creation, assist with debugging, and provide suggestions for implementing complex features while still requiring critical thinking and human decision-making.</p>
+    `,
+      link: "https://sql-library-manager-ai-assisted-rebuild.onrender.com",
+      github: "https://github.com/DraganaBegojev/SQL-Library-Manager--AI-Assisted-Rebuild-"
+    },
       {
       title: "Full Stack App with React & REST API",
       img: "images/project-18.jpg",
